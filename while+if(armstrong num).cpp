@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+      int num,tem,rem,sum=0;
+      cout<<"enter the number: ";
+      cin>>num;
+      tem=num;
+      while(tem!=0)
+      {
+            rem=tem%10;
+            sum=sum+rem*rem*rem;
+            tem=tem/10;
+
+      }
+      if(sum==num)
+      {cout<<"the is armstrong"<<endl;}
+      else{cout<<"the is not armstrong"<<endl;}
+}
